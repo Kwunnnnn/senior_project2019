@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Title</title>
+</head>
+<body ng-app = "myApp" ng-controller="showDataController">
+<h1 style="text-align: center">ประวัติการทดสอบ</h1>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th scope="col">No.</th>
+        <th scope="col">วัน/เดือน/ปี</th>
+        <th scope="col">จำนวนผู้ทดสอบ</th>
+        <th scope="col">ชื่อการทดลอง</th>
+        <th scope="col">ชื่อไฟล์เสียง</th>
+        <th scope="col">ชื่อฉากหลัง</th>
+        <th scope="col">สัมผัสตรงจุด/ไม่ตรงจุด</th>
+        <th scope="col">เวลาที่ใช้(วินาที)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="data in dataID">
+        <th scope="row">{{$index + 1}}</th>
+        <td>{{data.date_temp}}</td>
+        <td>{{data.num_person}}</td>
+        <td>{{data.name_test}}</td>
+        <td>{{data.sound_file}}</td>
+        <td>{{data.bg_file}}</td>
+        <td>{{data.position_touch}}</td>
+        <td>{{data.time_test}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<center><a href="index.html"><button style="margin-top: 15%; width: 20%" type="button" class="btn btn-primary btn-lg">กลับหน้าหลัก</button></a></center>
+
+</body>
+</html>

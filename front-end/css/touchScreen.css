@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+/*@font-face {*/
+    /*font-family: "TH Sarabun New";*/
+    /*src: url('/front-end/font/THSarabunNew.ttf');*/
+/*}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /*font-family: TH Sarabun New;*/
+    /*src: url("/front-end/font/THSarabunNew.ttf");*/
+}
+
+#output {
+    background-color: #3B3B3B;
+    width: 100%;
+    display: block;
+    min-height: 30px;
+    padding: 10px;
+    font-size: 0.8em;
+    color: white;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#tap-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /*   color: white; */
+    cursor: pointer;
+}
+
+.tap-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3rem;
+
+    color: white;
+    padding: 10px 20px;
+    margin: 0 0 7px;
+    outline: none;
+    position: relative;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.orange {
+    background-color:#80D8FF;
+}
+
+.seafoam {
+    background-color:#00B0FF;
+}
+
+
+
