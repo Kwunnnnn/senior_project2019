@@ -88,14 +88,14 @@ function create ()
 
 function update ()
 {
-    let pointer1 = scene.input.activePointer;
-    // let pointer = this.input.activePointer;
+    // let pointer1 = scene.input.activePointer;
+    let pointer = this.input.activePointer;
 
 
     text1.setText([
-        'x: ' + pointer1.worldX,
-        'y: ' + pointer1.worldY,
-        'isDown: ' + pointer1.isDown
+        'x: ' + pointer.worldX,
+        'y: ' + pointer.worldY,
+        'isDown: ' + pointer.isDown
     ]);
 
 
