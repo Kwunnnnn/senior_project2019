@@ -2,7 +2,7 @@
   "name": "SeniorProject_2019",
   "version": "1.0.0",
   "dependencies": {
-    "aws-sdk": "^2.480.0",
+    "aws-sdk": "^2.814.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "ejs": "^2.6.2",
